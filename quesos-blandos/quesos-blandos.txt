@@ -1,0 +1,22 @@
+# Data Estructurada: Ranking Nutricional y Precios de Quesos
+
+A continuación se presenta la base de datos estructurada en formato tabla Markdown, optimizada para el procesamiento, análisis y lectura por modelos de inteligencia artificial (IA). Los valores nutricionales corresponden a una porción estándar de 100 g.
+
+| Puesto | Queso (Variedad y Marca) | Calorías (kcal) | Proteínas (g) | Grasas Totales (g) | Grasas Sat. (g) | Sodio (mg) | Calcio (mg) | Precio por Kg | Supermercado Recomendado |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 🥇 | Por Salut Light Sin Sal (Tregar) | 243 | 29 | 13 | 7.0 | 37 | 800 | $16.985 | Carrefour / Comodín |
+| 2 🥈 | Muzzalmendra - Vegano (Felices Las Vacas) | 273 | 2 | 22 | 6.0 | 533 | N/D | $15.020 | Carrefour (Tienda Digital) |
+| 3 🥉 | Port Salut Light (La Serenísima) | 218 | 27 | 12 | 7.2 | 430 | 932 | $15.260 | Comodín |
+| 4 🏅 | Cremón Light (La Serenísima) | 236 | 21 | 17 | 11.0 | 340 | 714 | $18.190 | Comodín |
+| 5 🏅 | Por Salut Dietético con Sal (Tregar) | 233 | 29 | 13 | 7.0 | 550 | 800 | $14.499 | Carrefour / Comodín |
+| 6 🏅 | Port Salut Sin Sal Light (La Serenísima) | 217 | 27 | 12 | 7.2 | 38 | 932 | $25.550 | La Anónima (Ex-Libertad) |
+| 7 🚨 | Queso Protein (La Serenísima) | 191 | 30 | 7.5 | 5.0 | 597 | 955 | $25.690 | Comodín / La Serenísima |
+| 8 🚫 | Cremón Cremoso (La Serenísima) | 290 | 18 | 24 | 15.0 | 330 | 642 | $18.550 | Comodín |
+| 9 🚫 | Port Salut Clásico (La Serenísima) | 305 | 20 | 25 | 15.0 | 370 | 807 | N/D | No prioritario |
+| 10 🚫 | Por Salut (Tregar) | 323 | 20 | 27 | 16.0 | 437 | 653 | N/D | No prioritario |
+| 11 🚫 | Cremoso (Tregar) | 337 | 19 | 29 | 17.0 | 483 | 647 | N/D | No prioritario |
+
+## Contexto de Priorización
+* **Longevidad y Perfil Saludable:** Se prioriza un nivel de sodio inferior a 400 mg (idealmente <50 mg) y grasas saturadas reducidas, alineándose con esquemas de protección de los telómeros y alimentación desinflamatoria.
+* **Sustrato Anabólico:** Se destacan valores de proteína superiores a 25 g por cada 100 g, fundamentales para sostener el tejido y el desarrollo de fuerza pura luego de trabajar los *top sets* pesados.
+* **Eficiencia de Costo:** Los supermercados listados ofrecen la mejor relación para el costo real de la proteína por kilo.
