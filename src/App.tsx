@@ -183,7 +183,7 @@ export default function App() {
 
   return (
     <MobileFrame>
-      <div className="flex flex-col min-h-full bg-[#FCFAF7] text-editorial-text font-sans">
+      <div className="flex flex-col min-h-screen bg-[#FCFAF7] text-editorial-text font-sans relative">
         
         {/* Dynamic header - hides on subpanels for cleaner navigation */}
         {activeTab === 'explore' && (
@@ -519,7 +519,7 @@ export default function App() {
         )}
 
         {/* --- INTERACTIVE BOTTOM NAVIGATION BAR (NATIVE LOOK) --- */}
-        <div className="h-[68px] bg-white border-t border-editorial-border flex items-center justify-around px-2 shrink-0 relative z-30 select-none">
+        <div className="sticky bottom-0 bg-white/95 backdrop-blur-md border-t border-editorial-border flex items-center justify-around px-2 shrink-0 z-30 select-none h-[64px] shadow-sm">
           {/* Tab Button: Explore */}
           <button
             onClick={() => {
@@ -587,7 +587,7 @@ export default function App() {
 
         {/* --- FLOATING NOTIFIER IF 2 PRODUCTS SELECTED AND IN EXPLORE TAB --- */}
         {activeTab === 'explore' && compareList.length === 2 && (
-          <div className="absolute bottom-20 inset-x-4 bg-editorial-text text-white px-4 py-3 rounded-none border border-editorial-border flex items-center justify-between z-40 animate-slide-up select-none">
+          <div className="fixed bottom-20 max-w-[calc(100%-2rem)] md:max-w-[480px] mx-auto inset-x-4 bg-editorial-text text-white px-4 py-3 rounded-none border border-editorial-border flex items-center justify-between z-40 animate-slide-up select-none shadow-2xl">
             <div className="flex items-center gap-2">
               <Scale className="w-4.5 h-4.5 text-editorial-gold" />
               <div className="flex flex-col">
