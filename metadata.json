@@ -1,0 +1,6 @@
+{
+  "name": "NutriSúper - Clasificador & Comparador de Alimentos",
+  "description": "Guía interactiva de supermercado para tomar decisiones saludables al instante. Diseñado por el nutricionista Germán Auad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
