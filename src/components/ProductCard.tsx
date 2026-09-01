@@ -40,20 +40,32 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       onClick={() => onViewDetails(product)}
       className={`bg-[#FCFAF7] border border-editorial-border rounded-none p-4 flex flex-col justify-between hover:shadow-sm hover:border-editorial-text/40 transition-all duration-300 cursor-pointer relative overflow-hidden select-none active:scale-[0.99] ${getCardBorder(product.tier)}`}
     >
-      {/* Top Header: Rank, Brand, Tier */}
-      <div className="flex items-start justify-between gap-2">
-        <div className="flex flex-col">
-          <div className="flex items-center gap-1.5">
-            <span className="text-[10px] font-sans font-bold tracking-[0.15em] text-editorial-muted uppercase">
-              {product.brand}
-            </span>
-            <span className="text-xs font-serif font-black italic text-editorial-text">
-              {getRankEmoji(product.puesto)}
-            </span>
+      {/* Top Header: Rank, Brand, Image, Tier */}
+      <div className="flex items-start justify-between gap-3">
+        <div className="flex items-start gap-3 flex-1 min-w-0">
+          {product.imageUrl && (
+            <div className="w-12 h-12 bg-white border border-editorial-border shrink-0 p-1 flex items-center justify-center">
+              <img
+                src={product.imageUrl}
+                alt={product.name}
+                className="w-full h-full object-contain"
+                loading="lazy"
+              />
+            </div>
+          )}
+          <div className="flex flex-col min-w-0 flex-1">
+            <div className="flex items-center gap-1.5">
+              <span className="text-[10px] font-sans font-bold tracking-[0.15em] text-editorial-muted uppercase truncate">
+                {product.brand}
+              </span>
+              <span className="text-xs font-serif font-black italic text-editorial-text shrink-0">
+                {getRankEmoji(product.puesto)}
+              </span>
+            </div>
+            <h3 className="font-serif text-[14px] font-bold italic text-editorial-text leading-snug mt-0.5 line-clamp-1">
+              {product.name}
+            </h3>
           </div>
-          <h3 className="font-serif text-[15px] font-bold italic text-editorial-text leading-snug mt-1 pr-2 line-clamp-1">
-            {product.name}
-          </h3>
         </div>
         
         {/* Tier Indicator */}

@@ -73,6 +73,17 @@ export const ProductDetailBottomSheet: React.FC<ProductDetailBottomSheetProps> =
         {/* Content Body */}
         <div className="p-6 space-y-5">
           
+          {/* Product Image Highlight */}
+          {product.imageUrl && (
+            <div className="w-full h-44 bg-white border border-editorial-border flex items-center justify-center p-3 shadow-inner">
+              <img
+                src={product.imageUrl}
+                alt={product.name}
+                className="w-full h-full object-contain"
+              />
+            </div>
+          )}
+
           {/* Status Badges Alert / Recommendations */}
           <div className="flex flex-wrap gap-1.5">
             {isLowSodium && (

@@ -37,6 +37,8 @@ export const CATEGORIES: Category[] = [
   }
 ];
 
+const BASE_PATH = import.meta.env?.BASE_URL || "/";
+
 export const PRODUCTS: Product[] = [
   {
     id: 'tregar-por-salut-light-sin-sal',
@@ -56,7 +58,7 @@ export const PRODUCTS: Product[] = [
     tier: 'S',
     badge: '🥇 1er Puesto - Súper Recomendado',
     nutritionistVerdict: '¡La opción estrella! Prácticamente libre de sodio (solo 37mg), altísimo en proteínas y con un aporte graso muy controlado. Excelente para hipertensos y descenso de peso.',
-    imageUrl: '/quesos-blandos/01-S.png'
+    imageUrl: `${BASE_PATH}quesos-blandos/01-S.png`
   },
   {
     id: 'la-serenisima-port-salut-sin-sal-light',
@@ -76,7 +78,7 @@ export const PRODUCTS: Product[] = [
     tier: 'A',
     badge: '🥈 2do Puesto - Nutrición Premium',
     nutritionistVerdict: 'Nutricionalmente impecable (solo 38mg de sodio y excelente calcio/proteína). Sin embargo, su precio es sumamente elevado en comparación con Tregar. Si el dinero no es traba, es un S-Tier.',
-    imageUrl: '/quesos-blandos/02.png'
+    imageUrl: `${BASE_PATH}quesos-blandos/02.png`
   },
   {
     id: 'la-serenisima-port-salut-light',
@@ -96,7 +98,7 @@ export const PRODUCTS: Product[] = [
     tier: 'B',
     badge: '🥉 3er Puesto - Opción Equilibrada',
     nutritionistVerdict: 'Muy buen balance de proteínas (27g) y excelente cantidad de calcio (932mg, de los más altos). El sodio es intermedio, siendo una opción cotidiana muy sólida para la población general.',
-    imageUrl: '/quesos-blandos/03.png'
+    imageUrl: `${BASE_PATH}quesos-blandos/03.png`
   },
   {
     id: 'la-serenisima-cremon-light',
@@ -116,7 +118,7 @@ export const PRODUCTS: Product[] = [
     tier: 'C',
     badge: '🏅 4to Puesto - Aceptable',
     nutritionistVerdict: 'Su textura cremosa es excelente, pero ten cuidado: aunque dice "Light", posee 11g de grasas saturadas, sensiblemente mayor que las opciones superiores. Consumo moderado.',
-    imageUrl: '/quesos-blandos/04.png'
+    imageUrl: `${BASE_PATH}quesos-blandos/04.png`
   },
   {
     id: 'tregar-por-salut-dietetico-con-sal',
@@ -136,7 +138,7 @@ export const PRODUCTS: Product[] = [
     tier: 'C',
     badge: '🏅 5to Puesto - Buena Proteína',
     nutritionistVerdict: 'Tiene un contenido de proteínas espectacular (29g) y un precio muy competitivo. No obstante, el sodio sube a 550mg. Es una gran alternativa económica si no tienes restricción de sal.',
-    imageUrl: '/quesos-blandos/05.png'
+    imageUrl: `${BASE_PATH}quesos-blandos/05.png`
   },
   {
     id: 'felices-las-vacas-muzzalmendra-vegano',
@@ -156,7 +158,7 @@ export const PRODUCTS: Product[] = [
     tier: 'C',
     badge: '🏅 6to Puesto - Alternativa Plant-Based',
     nutritionistVerdict: 'Es la mejor opción si llevas una dieta libre de lácteos o vegana. Es bajo en grasas saturadas (6g), pero ten en cuenta que casi no aporta proteínas (solo 2g) y el sodio es elevado.',
-    imageUrl: '/quesos-blandos/06.png'
+    imageUrl: `${BASE_PATH}quesos-blandos/06.png`
   },
   {
     id: 'la-serenisima-queso-protein',
@@ -176,7 +178,7 @@ export const PRODUCTS: Product[] = [
     tier: 'D',
     badge: '🚨 7mo Puesto - Alerta Sodio y Costo',
     nutritionistVerdict: 'Es el más bajo en calorías y grasas de todos, y el más alto en proteínas (30g). Lamentablemente, posee un exceso notable de sodio (597mg) y un precio altísimo. Consumir de manera planificada.',
-    imageUrl: '/quesos-blandos/07.png'
+    imageUrl: `${BASE_PATH}quesos-blandos/07.png`
   },
   {
     id: 'la-serenisima-cremon-cremoso',
@@ -196,7 +198,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🚫 8vo Puesto - No Recomendado Diario',
     nutritionistVerdict: 'Porcentaje graso elevado (24g de grasas totales y 15g saturadas). No es adecuado para el consumo de todos los días, ya que aporta muchas calorías vacías de grasas saturadas.',
-    imageUrl: '/quesos-blandos/08.png'
+    imageUrl: `${BASE_PATH}quesos-blandos/08.png`
   },
   {
     id: 'la-serenisima-port-salut-clasico',
@@ -216,7 +218,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🚫 9no Puesto - No Recomendado',
     nutritionistVerdict: 'El queso clásico tiene un tenor graso elevado (15g saturadas) que perjudica tu perfil lipídico si se consume en demasía. Reemplaza siempre por su equivalente Light de la misma marca.',
-    imageUrl: '/quesos-blandos/09.png'
+    imageUrl: `${BASE_PATH}quesos-blandos/09.png`
   },
   {
     id: 'tregar-por-salut',
@@ -236,7 +238,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🚫 10mo Puesto - No Recomendado',
     nutritionistVerdict: 'Muy alto en calorías (323) y grasas saturadas (16g) comparado con su versión Light. No se justifica nutricionalmente existiendo la alternativa Light Sin Sal de la misma firma.',
-    imageUrl: '/quesos-blandos/10.png'
+    imageUrl: `${BASE_PATH}quesos-blandos/10.png`
   },
   {
     id: 'tregar-cremoso',
@@ -256,7 +258,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🚫 11er Puesto - Evitar en Dieta Habitual',
     nutritionistVerdict: 'El menos saludable de la comparativa. Es el que tiene más calorías (337) y más grasas saturadas (17g) de todo el catálogo, además de un sodio considerable. Reservar únicamente para ocasiones especiales.',
-    imageUrl: '/quesos-blandos/11.png'
+    imageUrl: `${BASE_PATH}quesos-blandos/11.png`
   },
   {
     id: 'casancrem-light-sin-sal',
@@ -276,7 +278,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🔄 Analizando...',
     nutritionistVerdict: 'Sin TACC. Sin sal agregada. Contiene almidón modificado y estabilizantes.',
-    imageUrl: '/quesos-untables/Casancrem Light Sin Sal Agregada.png'
+    imageUrl: `${BASE_PATH}quesos-untables/casancrem-light-sin-sal.png`
   },
   {
     id: 'cremette-light-tonadita',
@@ -296,7 +298,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🔄 Analizando...',
     nutritionistVerdict: 'Sin TACC. Queso procesado con crema. Alta presencia de estabilizantes.',
-    imageUrl: '/quesos-untables/Cremette Light (Tonadita).png'
+    imageUrl: `${BASE_PATH}quesos-untables/cremette-light-tonadita.png`
   },
   {
     id: 'cremon-untable-light',
@@ -316,7 +318,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🔄 Analizando...',
     nutritionistVerdict: 'Sin TACC. Excelente aporte proteico.',
-    imageUrl: '/quesos-untables/Cremón Untable Light (La Serenísima).png'
+    imageUrl: `${BASE_PATH}quesos-untables/cremon-untable-light.png`
   },
   {
     id: 'cremon-untable-original',
@@ -336,7 +338,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🔄 Analizando...',
     nutritionistVerdict: 'Sin TACC. Perfil de sodio muy controlado.',
-    imageUrl: '/quesos-untables/Cremón Untable Original (La Serenísima).png'
+    imageUrl: `${BASE_PATH}quesos-untables/cremon-untable-original.png`
   },
   {
     id: 'finlandia-mas-liviano',
@@ -356,7 +358,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🔄 Analizando...',
     nutritionistVerdict: 'Perfil extremadamente bajo en sodio. Excelente aporte de proteínas y calcio.',
-    imageUrl: '/quesos-untables/Finlandia Más Liviano (La Serenísima).png'
+    imageUrl: `${BASE_PATH}quesos-untables/finlandia-mas-liviano.png`
   },
   {
     id: 'finlandia-light',
@@ -376,7 +378,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🔄 Analizando...',
     nutritionistVerdict: 'Buen aporte proteico y el nivel más alto de calcio de la lista.',
-    imageUrl: '/quesos-untables/Finlandia Light (La Serenísima).png'
+    imageUrl: `${BASE_PATH}quesos-untables/finlandia-light.png`
   },
   {
     id: 'blanco-light-tregar',
@@ -396,7 +398,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🔄 Analizando...',
     nutritionistVerdict: 'Increíble perfil proteico y mínimo sodio.',
-    imageUrl: '/quesos-untables/Blanco Light (Tregar).png'
+    imageUrl: `${BASE_PATH}quesos-untables/blanco-light-tregar.png`
   },
   {
     id: 'chatel-tregar',
@@ -416,7 +418,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🔄 Analizando...',
     nutritionistVerdict: 'Récord absoluto en proteínas y calcio para la categoría.',
-    imageUrl: '/quesos-untables/Chatel (Tregar).png'
+    imageUrl: `${BASE_PATH}quesos-untables/chatel-tregar.png`
   },
   {
     id: 'por-salut-equilibrio',
@@ -436,7 +438,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🔄 Analizando...',
     nutritionistVerdict: 'Proteína excelente, pero con niveles críticos de sodio. Sello frontal de exceso.',
-    imageUrl: '/quesos-untables/Por Salut Equilibrio (La Paulina).png'
+    imageUrl: `${BASE_PATH}quesos-untables/por-salut-equilibrio.png`
   },
   {
     id: 'por-salut-la-paulina',
@@ -456,7 +458,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🔄 Analizando...',
     nutritionistVerdict: 'Sellos frontales de Exceso en Sodio y Exceso en Grasas Saturadas. Perfil pesado.',
-    imageUrl: '/quesos-untables/Por Salut (La Paulina).png'
+    imageUrl: `${BASE_PATH}quesos-untables/por-salut-la-paulina.png`
   },
   {
     id: 'crema-equilibrio',
@@ -476,7 +478,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🔄 Analizando...',
     nutritionistVerdict: 'Muy bajo en calorías y grasas absolutas. Bajo aporte proteico.',
-    imageUrl: '/quesos-untables/Crema Equilibrio (La Paulina).png'
+    imageUrl: `${BASE_PATH}quesos-untables/crema-equilibrio-la-paulina.png`
   },
   {
     id: 'crema-tradicional',
@@ -496,7 +498,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🔄 Analizando...',
     nutritionistVerdict: 'Alto en grasas totales, saturadas y trans. Perfil proteico muy pobre.',
-    imageUrl: '/quesos-untables/Crema Tradicional (La Paulina).png'
+    imageUrl: `${BASE_PATH}quesos-untables/crema-tradicional-la-paulina.png`
   },
   {
     id: 'cream-cheese-santa-clara',
@@ -516,7 +518,7 @@ export const PRODUCTS: Product[] = [
     tier: 'F',
     badge: '🔄 Analizando...',
     nutritionistVerdict: 'Buen balance proteico y excelente aporte de calcio.',
-    imageUrl: '/quesos-untables/Cream Cheese (Santa Rosa).png'
+    imageUrl: `${BASE_PATH}quesos-untables/cream-cheese-santa-rosa.png`
   }
 ];
 
