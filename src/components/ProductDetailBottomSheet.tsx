@@ -44,7 +44,7 @@ export const ProductDetailBottomSheet: React.FC<ProductDetailBottomSheetProps> =
       <div className="absolute inset-0 cursor-pointer" onClick={onClose} />
 
       {/* Floating Bottom Sheet */}
-      <div className="w-full max-w-[390px] bg-[#FCFAF7] rounded-none max-h-[85vh] overflow-y-auto no-scrollbar shadow-2xl relative z-10 flex flex-col border border-editorial-border animate-slide-up pb-6">
+      <div className="w-full max-w-lg md:max-w-xl bg-[#FCFAF7] rounded-none max-h-[85vh] overflow-y-auto no-scrollbar shadow-2xl relative z-10 flex flex-col border border-editorial-border animate-slide-up pb-6">
         
         {/* Slider Handle Accent - Minimal styled bar */}
         <div className="w-12 h-1 bg-editorial-border mx-auto mt-3 mb-2 shrink-0 cursor-pointer" onClick={onClose} />

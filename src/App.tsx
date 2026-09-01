@@ -233,7 +233,7 @@ export default function App() {
                 <div className="flex items-center justify-between">
                   <h2 className="text-xl font-serif font-bold italic text-editorial-text">Selecciona una Categoría</h2>
                 </div>
-                <div className="grid grid-cols-1 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {CATEGORIES.map(cat => (
                     <button
                       key={cat.id}
@@ -383,7 +383,7 @@ export default function App() {
               </div>
 
               {/* Products Grid Stack */}
-              <div className="space-y-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {filteredProducts.length > 0 ? (
                   filteredProducts.map((product) => (
                     <ProductCard
