@@ -198,7 +198,7 @@ export default function App() {
                   Categorías de Góndola
                 </span>
                 
-                <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
+                <div className="flex flex-wrap items-center gap-2 py-1">
                   {CATEGORIES.map((cat) => (
                     <button
                       key={cat.id}
